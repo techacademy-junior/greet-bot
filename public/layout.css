@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  padding: 30px;
+}
+
+.greeting-contents {
+  width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: solid 8px #ddd;
+}
+
+.balloon {
+  margin: 30px;
+  line-height: 2em;
+}
+
+.form {
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form input[type="text"] {
+  width: 370px;
+  padding: 15px;
+  font-size: 16px;
+  border: 3px solid #999;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.form input[type="submit"] {
+  display: block;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  color: #fff;
+  background-color: #39cc00;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #00a000;
+}
+
+.result {
+  margin: 30px 30px 0;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.result::before{
+  margin-left: -30px;
+  content: '「';
+}
+
+.result::after{
+  margin-left: -10px;
+  content: '！」';
+}
+
+.illust {
+  line-height: 0;
+}

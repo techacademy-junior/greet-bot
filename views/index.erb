@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>あいさつロボット</title>
-  </head>
-  <body>
-    <h3>あいさつロボット</h3>
-    <p>ワタシハアイサツロボットデス。</p>
-    <p>アイサツヲニュウリョクシテクダサイ。</p>
-
-    <img src="/robot.png" alt="ロボット画像">
-    <%= @greet %>
-
-    <p>ロボットは。3つのあいさつ「おはよう」「こんにちは」「こんばんは」の３つの挨拶が理解できます。</p>
-    <form action="/" method="POST">
-      <label>あいさつ: <input type="text" name="keyword" placeholder="ここにあいさつを入れてね"></label>
-      <input type="submit" value="送信">
+<head>
+  <meta charset="UTF-8">
+  <title>あいさつロボット</title>
+  <link href="/layout.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+  <div class="greeting-contents">
+    <div class="balloon">
+      ワタシハアイサツロボットデス。<br>
+      アイサツヲニュウリョクシテクダサイ。<br>
+      あいさつロボットは、「おはよう」「こんにちは」「こんばんは」の3つのあいさつが理解できます。
+    </div>
+    <form action="/" method="POST" class="form">
+      <input id="name-1" type="text" name="keyword" placeholder="ここにあいさつを入れてね">
+      <input type="submit" value="送信する">
     </form>
-  </body>
+    <div class="result">
+      <%= @greet %>
+    </div>
+    <div class="illust">
+      <img src="/illust.png" alt="あいさつロボットくん">
+    </div>
+  </div>
+</div>
+</body>
 </html>
